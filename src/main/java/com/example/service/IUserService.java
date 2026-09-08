@@ -10,4 +10,5 @@ public interface IUserService {
     boolean resetPasswordWithOtp(String email, String otp, String newPassword);
     User findByUsername(String username);
     User findByEmail(String email);
+    void updateProfile(User user);
 }

@@ -92,4 +92,9 @@ public class UserServiceImpl implements IUserService {
     public User findByEmail(String email) {
         return userDao.findByEmail(email);
     }
+    
+    @Override
+    public void updateProfile(User user) {
+        userDao.update(user);
+    }
 }

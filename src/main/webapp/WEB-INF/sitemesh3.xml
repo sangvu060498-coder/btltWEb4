@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <!-- Bỏ qua các file ảnh và tài nguyên tĩnh -->
+    <mapping path="/image*" exclude="true"/>
+    <mapping path="/static/*" exclude="true"/>
+    <mapping path="*.css" exclude="true"/>
+    <mapping path="*.js" exclude="true"/>
+    <mapping path="*.png" exclude="true"/>
+    <mapping path="*.jpg" exclude="true"/>
+    <mapping path="*.jpeg" exclude="true"/>
+
+    <mapping path="/admin/*" decorator="/admin.jsp"/>
+    <mapping path="/*" decorator="/web.jsp"/>
+</sitemesh>

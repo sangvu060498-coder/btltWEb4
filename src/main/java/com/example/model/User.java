@@ -45,6 +45,9 @@ public class User implements Serializable {
 
     @Column(name = "OtpExpiry")
     private LocalDateTime otpExpiry;
+    
+    @Column(name = "Images", columnDefinition = "nvarchar(500) null")
+    private String images;
 
     public User() {}
 
@@ -78,4 +81,6 @@ public class User implements Serializable {
     public void setOtp(String otp) { this.otp = otp; }
     public LocalDateTime getOtpExpiry() { return otpExpiry; }
     public void setOtpExpiry(LocalDateTime otpExpiry) { this.otpExpiry = otpExpiry; }
+    public String getImages() { return images; }
+    public void setImages(String images) { this.images = images; }
 }
